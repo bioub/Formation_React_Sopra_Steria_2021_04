@@ -5,6 +5,7 @@ import Counter from './Counter.js';
 import ExHelloWorld from './ExHelloWorld.js';
 import ExMultiStateButton from './ExMultiStateButton.js';
 import Hello from './Hello';
+import Select from './Select.js';
 
 function App() {
   const prenom = 'Toto';
@@ -24,6 +25,8 @@ function App() {
       <h2>Exercices</h2>
       <ExHelloWorld />
       <ExMultiStateButton values={['Rouge', 'Orange', 'Bleu']} />
+      <h2>Select (Conditional Rendering, List and Keys)</h2>
+      <Select values={['Rouge', 'Orange', 'Bleu']} />
     </div>
   );
 }

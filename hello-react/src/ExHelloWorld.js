@@ -3,20 +3,24 @@ import { Component } from "react";
 class ExHelloWorld extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      prenom: '',
+    };
+    this.handleInput = this.handleInput.bind(this);
+  }
+  handleInput(event) {
+    this.setState({
+      prenom: event.target.value,
+    });
   }
   render() {
-    const {} = this.state;
+    const { prenom } = this.state;
     return (
       <div className="ExHelloWorld">
         <div>
-          Prénom : <input />
-          {/*
-           * écouter l'événement input et mettre à jour le state avec
-           * le contenu de la balise input (propriété value d'un HTMLInputElement)
-           */}
+          Prénom : <input onChange={this.handleInput} />
         </div>
-        <p>Bonjour {/* afficher en temps réel le prénom saisi */}</p>
+        <p>Bonjour {prenom}</p>
       </div>
     );
   }
