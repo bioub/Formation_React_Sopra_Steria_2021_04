@@ -23,7 +23,7 @@ class Counter extends Component {
   render() {
     const { count } = this.state;
 
-    // btnEl.addEventListener('click', (event) => {
+    // rootEl.addEventListener('click', (event) => {
     //    event
     //    this.setState(...
     // });

@@ -49,7 +49,6 @@ import React from "react";
 // }
 
 function Hello({ name = 'World', age = 0, isTrainer = false }) {
-  
   return (
     <div className="Hello" title="Hello !!" lang="fr-FR">
       Hello my name is <b>{name}</b>, I'm {age}.

@@ -21,7 +21,7 @@ const props = {
 
 // ES2015 : destructurer un objet
 
-//    { name: 'Romain', age: 35 , isTrainer: true     }
+//       { name: 'Romain', age: 35 , isTrainer: true     }
 // const { name: prenom  , age: age, isTrainer: isTrainer} = props;
 
 // console.log(prenom, age, isTrainer);

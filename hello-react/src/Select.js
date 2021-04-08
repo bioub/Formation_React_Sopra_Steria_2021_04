@@ -21,7 +21,7 @@ import React, { Component } from "react";
 
 //     let itemsElement;
 
-//     const itemsJsx = values.map((val) => <div className="item">{val}</div>);
+//     const itemsJsx = values.map((val) => <div className="item" key={val}>{val}</div>);
 
 //     if (opened) {
 //       itemsElement = (

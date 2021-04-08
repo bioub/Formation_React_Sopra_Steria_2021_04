@@ -1,7 +1,7 @@
 import { Component } from 'react';
 
 class Clock extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       contact: {
@@ -21,7 +21,7 @@ class Clock extends Component {
   }
   render() {
     const { now, contact } = this.state;
-    const { format } = this.props;
+    // const { format } = this.props;
     
     return (
       <div className="Clock">
