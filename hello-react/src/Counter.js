@@ -36,6 +36,9 @@ import { Component } from 'react';
 //   }
 // }
 
+// Composant Non-Controllé
+// ses valeurs sont internes, moins réutilisable
+// beaucoup plus compliqué d'échanger avec d'autres composants
 class Counter extends Component {
   state = {
     count: 0,

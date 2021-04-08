@@ -6,7 +6,9 @@ import ExHelloWorld from './ExHelloWorld';
 import ExMultiStateButton from './ExMultiStateButton';
 import Hello from './Hello';
 import ClockControls from './lifecycle/ClockControls';
+import Parent from './lifting-state-up/Parent';
 import Select from './Select';
+import UserForm from './UserForm';
 
 function App() {
   const prenom = 'Toto';
@@ -32,9 +34,13 @@ function App() {
       <ExHelloWorld />
       <ExMultiStateButton values={['Rouge', 'Orange', 'Bleu']} />
       <h2>Select (Conditional Rendering, Lists and Keys)</h2>
-      <Select values={['Rouge', 'Orange', 'Bleu']} />
+      <Select values={['Rouge', 'Orange', 'Bleu']}  />
       <h2>ClockControls (Composition, Lifecycle)</h2>
       <ClockControls />
+      <h2>UserForm (Forms)</h2>
+      <UserForm />
+      <h2>Parent (Lifting State Up)</h2>
+      <Parent />
     </div>
   );
 }
