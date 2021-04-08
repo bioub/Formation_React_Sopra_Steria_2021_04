@@ -5,6 +5,7 @@ import Counter from './Counter';
 import ExHelloWorld from './ExHelloWorld';
 import ExMultiStateButton from './ExMultiStateButton';
 import Hello from './Hello';
+import ClockControls from './lifecycle/ClockControls';
 import Select from './Select';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       {/* React.createElement(Hello, { name:'Romain', age:35, isTrainer:true }) */}
       <Hello name="Romain" age={35} isTrainer />
       <Hello name={prenom} />
-      <h2>Clock (State and Lifecycle)</h2>
+      <h2>Clock (State)</h2>
       <Clock />
       <h2>Counter (Handling Events)</h2>
       <Counter />
@@ -32,6 +33,8 @@ function App() {
       <ExMultiStateButton values={['Rouge', 'Orange', 'Bleu']} />
       <h2>Select (Conditional Rendering, Lists and Keys)</h2>
       <Select values={['Rouge', 'Orange', 'Bleu']} />
+      <h2>ClockControls (Composition, Lifecycle)</h2>
+      <ClockControls />
     </div>
   );
 }
