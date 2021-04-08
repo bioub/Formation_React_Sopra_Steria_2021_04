@@ -1,0 +1,33 @@
+$borderColor: grey;
+$padding: 5px;
+
+.host {
+  user-select: none;
+}
+
+.selected {
+  border: 2px solid $borderColor;
+  padding: $padding;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.items {
+  margin-top: 5px;
+  border: 2px solid $borderColor;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.item {
+  padding: $padding;
+
+  &.active {
+    background-color: lightsalmon;
+  }
+
+  &:hover {
+    background-color: lavender;
+  }
+}
+

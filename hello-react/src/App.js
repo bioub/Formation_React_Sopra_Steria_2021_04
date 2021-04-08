@@ -8,6 +8,7 @@ import Hello from './Hello';
 import ClockControls from './lifecycle/ClockControls';
 import Parent from './lifting-state-up/Parent';
 import Select from './Select';
+import Todos from './todos/Todos';
 import UserForm from './UserForm';
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
       <Counter />
       <Counter />
       <Counter />
-      <h2>Exercices</h2>
+      <h2>Exercices (Props, Events, State)</h2>
       <ExHelloWorld />
       <ExMultiStateButton values={['Rouge', 'Orange', 'Bleu']} />
       <h2>Select (Conditional Rendering, Lists and Keys)</h2>
@@ -41,6 +42,8 @@ function App() {
       <UserForm />
       <h2>Parent (Lifting State Up)</h2>
       <Parent />
+      <h2>Exercice Todos (Lifting State Up)</h2>
+      <Todos />
     </div>
   );
 }

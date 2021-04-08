@@ -1,4 +1,7 @@
+import classNames from 'classnames';
 import React, { Component } from "react";
+
+import styles from "./Select.module.scss";
 
 // class Select extends Component {
 //   constructor({ values }) {
@@ -60,12 +63,12 @@ class Select extends Component {
     const { values } = this.props;
 
     return (
-      <div className="Select" onClick={this.handleClick}>
-        <div className="selected">{selected}</div>
+      <div className={styles.host} onClick={this.handleClick}>
+        <div className={styles.selected}>{selected}</div>
         {opened && (
-          <div className="items">
+          <div className={styles.items}>
             {values.map((val) => (
-              <div className="item" key={val}>{val}</div>
+              <div className={classNames(styles.item, {[styles.active]: val === selected})} key={val}>{val}</div>
             ))}
           </div>
         )}
