@@ -22,10 +22,12 @@ console.log(hello('Eric')); // Hello Eric
 class Contact {
   constructor(name) {
     this.name = name;
+    // propriété hello
     this.hello = function() {
       return '(objet) Hello ' + this.name;
     }
   }
+  // Contact.prototype.hello
   hello() {
     return '(prototype) Hello ' + this.name;
   }

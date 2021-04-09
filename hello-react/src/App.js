@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Clock from './Clock';
 import Counter from './Counter';
@@ -12,11 +12,8 @@ import Todos from './todos/Todos';
 import UserForm from './UserForm';
 
 function App() {
-  const prenom = 'Toto';
-
-  // state = {
-  //   colors: ['A', 'B', 'C']  
-  // }
+  const [prenom, setPrenom] = useState('Toto');
+  const [prenoms, setPrenoms] = useState(['Toto', 'Titi', 'Tata']);
 
   return (
     <div className="App">
@@ -35,7 +32,7 @@ function App() {
       <ExHelloWorld />
       <ExMultiStateButton values={['Rouge', 'Orange', 'Bleu']} />
       <h2>Select (Conditional Rendering, Lists and Keys)</h2>
-      <Select values={['Rouge', 'Orange', 'Bleu']}  />
+      <Select values={prenoms} selected={prenom} onSelect={setPrenom} />
       <h2>ClockControls (Composition, Lifecycle)</h2>
       <ClockControls />
       <h2>UserForm (Forms)</h2>
