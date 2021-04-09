@@ -58,7 +58,7 @@ Traiter ADD_TODO. L'action ADD_TODO ressemblera à :
 }
 ```
 
-Elle devra ajouter le payload au tableau `todos` du state tout en préservant les autres clés. (2 niveau d'immuabilité à traiter ex : `{...state, [...state.todos, {id: Math.random()}]})`
+Elle devra ajouter le payload au tableau `items` du state tout en préservant les autres clés. (2 niveau d'immuabilité à traiter ex : `{...state, [...state.items, {id: Math.random()}]})`
 
 L'id peut être généré avec `Math.random()`
 
