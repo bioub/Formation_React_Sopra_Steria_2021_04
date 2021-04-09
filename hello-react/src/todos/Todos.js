@@ -65,11 +65,17 @@ class Todos extends Component {
     // requete AJAX vers le serveur (PHP, Java, Node.js...)
     // API Natif du navigateur : XMLHttpRequest, fetch (moderne)
     // Libs: axios
+    // dispatch({type: 'FETCH_TODOS_REQUESTED'});
+    // onPreFetch()
+    
     fetch('https://jsonplaceholder.typicode.com/todos', {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((todos) => {
+
+        // dispatch({type: 'FETCH_TODOS_SUCCESS', payload: todos});
+        // onFetchSuccess()
         this.setState({
           loading: false,
           todos
